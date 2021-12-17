@@ -22,7 +22,7 @@ const UserProfile = () => {
     return initials.toUpperCase()
   }
 
-  const fullName = u.profile.firstName + ' ' + u.profile.lastName
+  const fullName = u.profile.firstName +' '+ u.profile.lastName
 
   var daydate = dayjs(u.createdAt).format('LLLL')
 
@@ -64,11 +64,10 @@ const UserProfile = () => {
           }}
         >
           <Avatar
-            alt={getInitials(fullName)}
             src={u.avatar}
             className='mx-auto'
             sx={{ bgcolor: deepPurple[500], width: '5rem', height: '5rem' }}
-          ></Avatar>
+          >{getInitials(fullName)}</Avatar>
           <Box
             className='d-flex text-center justify-content-center text-white flex-row'
             sx={{
