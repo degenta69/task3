@@ -22,7 +22,7 @@ const UserProfile = () => {
     return initials.toUpperCase()
   }
 
-  const fullName = u.profile.firstName + u.profile.lastName
+  const fullName = u.profile.firstName + ' ' + u.profile.lastName
 
   var daydate = dayjs(u.createdAt).format('LLLL')
 
