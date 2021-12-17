@@ -1,0 +1,14 @@
+body{
+    background-color: #931F1F !important;
+    overflow-x: hidden;
+}
+
+#waves{
+    background-color: #931F1F !important;
+    background-image: url('./assets/layered-waves-haikei.png');
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-size: cover;
+    bottom: -100% !important;
+    height: 86% !important;
+}
